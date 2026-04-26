@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
 REPO_URL="https://github.com/sgl-project/sglang.git"
-TAG_VERSION="v0.5.6.post2"
+TAG_VERSION="0.5.10"
 DIR_NAME="${SCRIPT_DIR}/sglang"
 
 clone_source() {
@@ -23,7 +23,7 @@ update_dockerfile() {
 
 build_container() {
     pushd ${SCRIPT_DIR}/sglang/
-    docker build -f docker/Dockerfile -t sglang-devel:${TAG_VERSION} .
+    docker build -f docker/Dockerfile --build-arg SGL_VERSION=${TAG_VERSION} -t sglang-devel:v${TAG_VERSION} .
 }
 
 clone_source
