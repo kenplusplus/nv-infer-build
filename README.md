@@ -21,6 +21,6 @@
 | nvidia-nvtx-cu12 | 12.9.79 | 12.9.79 |
 | nvidia-cublas-cu12| 12.9.1.4 |12.9.1.4|
 | apache-tvm-ffi | 0.1.10 |0.1.10|
-| image | bluewish/sglang-devel:v0.5.6.post2 | bluewish/sglang-devel:v0.5.10
-|
+| image | docker pull bluewish/sglang-devel:v0.5.6.post2 | docker pull bluewish/sglang-devel:v0.5.10 |
+
 ## vLLM
